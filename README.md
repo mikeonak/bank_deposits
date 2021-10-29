@@ -47,10 +47,30 @@ The repo contains:
 * readme.md
 * notebook.ipynb
 * script train.py
+
+
 * script predict.py
+To run a script: python predict.py
+or with gunicorn:
+gunicorn --bind 0.0.0.0:9696 predict:app
+
 * pipenv, pipenv.lock
 * Dockerfile
+Instalation:
+Linux (debian) / I didn't test it in Windows:
+1) install docker, 
+2) if no running: sudo service docker run
+3) Build docker file: (sudo) docker build -t mterm_project .
+4) Start: (sudo) docker run -it --rm -p 9696:9696 mterm_project:latest
 
+
+
+
+
+pipenv install awsebcli --dev
+eb local run --port 9696
+eb create mterm-project-env
+eb init -p docker -r eu-central-1 mterm_project
 
 
 
