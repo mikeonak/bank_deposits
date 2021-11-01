@@ -22,21 +22,21 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
 * script predict.py
 * pipenv, pipenv.lock
        
-       Instructions:
+Instructions:
        
-       1) install pipenv 
+1) install pipenv 
        
               pip install pipenv
        
-       2) Within the directory which contains files: pipenv, pipenv.lock 
+2) Within the directory which contains files: pipenv, pipenv.lock 
               
               pipenv install 
        
-       3) Run virtual environment shell
+3) Run virtual environment shell
        
               pipenv shell 
         
-        4) Then you can deploy the model with flask, using gunicorn
+4) Then you can deploy the model with flask, using gunicorn
         
               gunicorn --bind 0.0.0.0:9696 predict:app
 
