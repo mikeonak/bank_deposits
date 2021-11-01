@@ -54,11 +54,11 @@ Input variables:
 * Dockerfile
   Instalation:
   Linux (debian) (I didn't test it in Windows):
-        1) install docker, 
-        2) if service is not running: sudo service docker run
-        3) Build docker file: (sudo) docker build -t mterm_project .
-        4) Start docker file: (sudo) docker run -it --rm -p 9696:9696 mterm_project:latest
-        5)
+        1)install docker, 
+        2)if service is not running: sudo service docker run
+        3)Build docker file: (sudo) docker build -t mterm_project .
+        4)Start docker file: (sudo) docker run -it --rm -p 9696:9696 mterm_project:latest
+        
 
 * depo_client_score.py
     Test the model using depo_client_score.py: python depo_client_score.py
