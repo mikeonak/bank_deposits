@@ -60,7 +60,8 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
    4) Run the file: 
  
                sudo docker run -it --rm -p 9696:9696 mterm_project:latest
-        
+   
+   5) You can test if it works using described below file
 
 * depo_client_score.py
 
@@ -74,7 +75,7 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
 
 
 
-pipenv install awsebcli --dev
+
 eb local run --port 9696
 eb create mterm-project-env
 eb init -p docker -r eu-central-1 mterm_project
