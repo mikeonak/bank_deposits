@@ -42,26 +42,28 @@ Input variables:
 
 
 
-The repo contains:
+## Repo contains:
 
 * readme.md
 * notebook.ipynb
-* script train.py
-
-
+* script train.py (final script - training final model and save it as bin file)
 * script predict.py
-To run a script: python predict.py
-or with gunicorn:
-gunicorn --bind 0.0.0.0:9696 predict:app
-
 * pipenv, pipenv.lock
+       - you have to install pipen (pip install pipenv), then as you have pipenv, pipenv.lock in project directory: pipenv install, and finally pipenv shell (to run virtual            environment shell). Then you can run it from virtual environment (gunicorn --bind 0.0.0.0:9696 predict:app)
+
 * Dockerfile
-Instalation:
-Linux (debian) / I didn't test it in Windows:
-1) install docker, 
-2) if no running: sudo service docker run
-3) Build docker file: (sudo) docker build -t mterm_project .
-4) Start: (sudo) docker run -it --rm -p 9696:9696 mterm_project:latest
+  Instalation:
+  Linux (debian) (I didn't test it in Windows):
+        1) install docker, 
+        2) if service is not running: sudo service docker run
+        3) Build docker file: (sudo) docker build -t mterm_project .
+        4) Start docker file: (sudo) docker run -it --rm -p 9696:9696 mterm_project:latest
+        5)
+
+* depo_client_score.py
+    Test the model using depo_client_score.py: python depo_client_score.py
+* depo_client_score_ebs.py
+    As the model is also availablea on AWS beanstalk you can test it using depo_client_score_ebs.py
 
 
 
