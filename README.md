@@ -22,36 +22,44 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
 * script predict.py
 * pipenv, pipenv.lock
        
-Instructions:
+  Instructions:
        
-1) install pipenv 
+  1) install pipenv 
        
               pip install pipenv
        
-2) Within the directory which contains files: pipenv, pipenv.lock 
+  2) Within the directory which contains files: pipenv, pipenv.lock 
               
               pipenv install 
        
-3) Run virtual environment shell
+  3) Run virtual environment shell
        
               pipenv shell 
         
-4) Then you can deploy the model with flask, using gunicorn
+  4) Then you can deploy the model with flask, using gunicorn
         
               gunicorn --bind 0.0.0.0:9696 predict:app
 
 
 * Dockerfile
-  Instalation:
-  Linux (debian) (I didn't test it in Windows):
   
-        1) Install docker
+   Instalation - debian (I didn't test it in Windows):
+  
+   1) Install docker
         
-        2) If service is not running: sudo service docker run
+              sudo apt-get install docker.io
+              
+   2) If service is not running: 
+  
+              sudo service docker run
         
-        3) Build docker file: (sudo) docker build -t mterm_project .
+   3) Build docker file: 
+ 
+              sudo docker build -t mterm_project .
         
-        4) Start docker file: (sudo) docker run -it --rm -p 9696:9696 mterm_project:latest
+   4) Run the file: 
+ 
+               sudo docker run -it --rm -p 9696:9696 mterm_project:latest
         
 
 * depo_client_score.py
