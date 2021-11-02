@@ -22,7 +22,7 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
 * script predict.py
 * pipenv, pipenv.lock
        
-  Instructions:
+  Instructions (if you have pipenv, docker, awsb installed (as you are in progress in zoomcamp-course a think you have :) )  please skip installation procedure:
        
   1) install pipenv 
        
@@ -69,16 +69,21 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
     
 * depo_client_score_ebs.py
 
-    As the model is also availablea on AWS beanstalk you can test it using depo_client_score_ebs.py
+    As the model is also availablea on AWS beanstalk you can test it using depo_client_score_ebs.py.
+    I deployed model according to below listed code:
+       
+       eb init -p docker -r eu-central-1 mterm_project
+    Deploy model it locally (for testeng):   
+       
+       eb local run --port 9696
+       
+    Deploy in AWS Elasticbeanstalk:
+    
+       eb create mterm-project-env
+       
+    
 
 
-
-
-
-
-eb local run --port 9696
-eb create mterm-project-env
-eb init -p docker -r eu-central-1 mterm_project
 
 
 
