@@ -73,7 +73,7 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
     
 * depo_client_score_ebs.py
 
-    As the model is also availablea on AWS Elastic Beanstalk you can test it using depo_client_score_ebs.py.
+    As the model is also availablea on AWS Elastic Beanstalk you can test it using depo_client_score_ebs.py. The file contains url address.
     I deployed model according to below listed code:
        
               eb init -p docker -r eu-central-1 mterm_project
