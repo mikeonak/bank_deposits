@@ -24,7 +24,7 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
 * pipenv, pipenv.lock
        
   Instructions (if you have pipenv, docker, awsb installed (as you are in progress in zoomcamp-course a think you have :) )  please skip installation procedure.
-  First of all copy all files to your directory. Next steps:
+  At first copy all files to your directory. Next steps:
        
   1) install pipenv 
        
