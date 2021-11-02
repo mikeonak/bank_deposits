@@ -85,7 +85,9 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
     Deploy in AWS Elasticbeanstalk:
     
               eb create mterm-project-env
-       
+ 
+ * csv file with data - bank-additional-full.csv
+ 
     
 Attribute Information:
 
