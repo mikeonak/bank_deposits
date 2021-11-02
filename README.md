@@ -52,7 +52,7 @@ The data is related with direct marketing campaigns of a Portuguese banking inst
               
    2) If service is not running: 
   
-              sudo service docker run
+              sudo service docker start
         
    3) Build docker file: 
  
